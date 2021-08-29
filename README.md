@@ -35,6 +35,20 @@ Handling and synchronization services
 는 기업의 정보시스템에서 관계형 데이터베이스는 데이터의 관리와 활용에 있어 기존의 파일시스템과 비교할
 때 매우 간편하고 강력한 기능을 제공한다.
 
+* 튜닝 종류
++ 데이터베이스 설계
+
++ 데이터베이스 환경
+- 공유 풀 튜닝
+- - 라이브러리 캐시 튜닝
+- - 딕셔너리 캐시 튜닝
+- 데이터베이스 버퍼 캐시 튜닝
+- 디스크 I/O 튜닝
+- 로우 마이그레이션 & 로우 체이닝
+
++ SQL 문장
+
+
 * 튜닝 방법론
 + 비율 기반 분석
 - 소규모 용량의 데이터베이스에선 효율적
@@ -52,8 +66,8 @@ Handling and synchronization services
 
 * 통합 정보 시스템의 튜닝
 
-
 # Note
 
 전사적 자원 관리(ERP), 고객 관계 관리(CRM), 데이터 웨어하우스(DW)
+
 register Thesis proposal -> contact teacher -> topic -> Register Thesis -> Defend thesis at the end
