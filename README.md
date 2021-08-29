@@ -6,26 +6,26 @@
 
 # Microsoft SQL Server
 * RDBMS(Relational database management system, 관계형 데이터베이스 시스템)
-관계형 모델(relational model)을 기반으로 한 데이터베이스 관리 시스템(DMS), 주요 데이터베이스 모델들의 기반
-- 테이블 데이터 조작을 위한 관계 연산자 제공
+    + 관계형 모델(relational model)을 기반으로 한 데이터베이스 관리 시스템(DMS), 주요 데이터베이스 모델들의 기반
+    + 테이블 데이터 조작을 위한 관계 연산자 제공
 
-+ 튜블(Record)(세로줄)
+* 튜블(Record)(세로줄)
 
-+ 칼럼(Attribute)(가로줄)
+* 칼럼(Attribute)(가로줄)
 
-+ 식별자(identifier)(아이디가 대표적)
+* 식별자(identifier)(아이디가 대표적)
 
-* main components
-+ Database Engine
-- Relational Engine
-- Storage Engine
+* Main components
+    * Database Engine
+        + Relational Engine
+        + Storage Engine
 
-+ SQLOS
-OS under database engine
-Handling and synchronization services
+    * SQLOS
+        + OS under database engine
+        + Handling and synchronization services
 
-* Tools
-+ SSMS(SQL Server Management Studio)
+    * Tools
+        + SSMS(SQL Server Management Studio)
 
 
 
@@ -36,31 +36,31 @@ Handling and synchronization services
 때 매우 간편하고 강력한 기능을 제공한다.
 
 * 튜닝 종류
-+ 데이터베이스 설계
+    + 데이터베이스 설계
 
-+ 데이터베이스 환경
-- 공유 풀 튜닝
-- - 라이브러리 캐시 튜닝
-- - 딕셔너리 캐시 튜닝
-- 데이터베이스 버퍼 캐시 튜닝
-- 디스크 I/O 튜닝
-- 로우 마이그레이션 & 로우 체이닝
+    + 데이터베이스 환경
+        - 공유 풀 튜닝
+        - - 라이브러리 캐시 튜닝
+        - - 딕셔너리 캐시 튜닝
+        - 데이터베이스 버퍼 캐시 튜닝
+        - 디스크 I/O 튜닝
+        - 로우 마이그레이션 & 로우 체이닝
 
 + SQL 문장
 
 
 * 튜닝 방법론
-+ 비율 기반 분석
-- 소규모 용량의 데이터베이스에선 효율적
-- 복잡한 환경에서의 분석에 한계 있음(대규모 필요성)
+    + 비율 기반 분석
+        - 소규모 용량의 데이터베이스에선 효율적
+        - 복잡한 환경에서의 분석에 한계 있음(대규모 필요성)
 
-+ 대기 이벤트 기반 분석
-- 연결된 동시 세션들이 데이터베이스의 어떤 자원에 대해 대기하고 있는가를 진단
-- 서비스 처리 시간과 운영체제 자원에 대한 대기시간은 고려되지 않음(서비스 처리 시간'도' 포함할 필요있음)
+    + 대기 이벤트 기반 분석
+        - 연결된 동시 세션들이 데이터베이스의 어떤 자원에 대해 대기하고 있는가를 진단
+        - 서비스 처리 시간과 운영체제 자원에 대한 대기시간은 고려되지 않음(서비스 처리 시간'도' 포함할 필요있음)
 
-+ 응답 시간 분석
-- 응답 시간 = 처리 시간 + 대기 시간
-- 2000년대부터 현존하는 가장 효율적인 방법
+    + 응답 시간 분석
+        - 응답 시간 = 처리 시간 + 대기 시간
+        - 2000년대부터 현존하는 가장 효율적인 방법
 
 * 웹 기반 시스템의 튜닝
 
