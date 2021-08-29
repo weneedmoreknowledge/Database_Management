@@ -19,15 +19,11 @@
     * Database Engine
         + Relational Engine
         + Storage Engine
-
     * SQLOS
         + OS under database engine
         + Handling and synchronization services
-
     * Tools
         + SSMS(SQL Server Management Studio)
-
-
 
 # Tuning
 원하는 정보를 빠르게 출력하기 위해 시스템을 조정하는 작업
@@ -37,7 +33,6 @@
 
 * 튜닝 종류
     + 데이터베이스 설계
-
     + 데이터베이스 환경
         - 공유 풀 튜닝
         - - 라이브러리 캐시 튜닝
@@ -45,9 +40,7 @@
         - 데이터베이스 버퍼 캐시 튜닝
         - 디스크 I/O 튜닝
         - 로우 마이그레이션 & 로우 체이닝
-
-+ SQL 문장
-
+    + SQL 문장
 
 * 튜닝 방법론
     + 비율 기반 분석
