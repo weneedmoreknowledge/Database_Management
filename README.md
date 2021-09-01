@@ -51,6 +51,19 @@ Entity - 객체
             UPDATE - 데이터를 업데이트 할 수 있는 권한
             DELETE - 데이터를 삭제할 수 있는 권한
             USAGE - 스키마 또는 함수와 같은 데이터베이스 개체를 사용할 수 있는 권한
+* 장단점
+    - 장점
+        High performance
+        No code needed
+        Well defined standards
+        Portability
+        Structured system
+        Multiple data views
+    - 단점
+        Complexity
+        Cost
+        Partial Control
+        Scalability and Flexibility
 
 
 # Microsoft SQL Server
