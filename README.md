@@ -65,6 +65,62 @@ Entity - 객체
         Partial Control
         Scalability and Flexibility
 
+# Normalization(정규화)
+Relational database 설계에서 중복된 데이터가 최소화되도록 데이터베이스의 구조를 결정하는 것.
+A database design technique that reduces data redundancy and eliminates undesirable characteristics like Insertion, Update and Deletion Anomalies.
+* Normal Forms in SQL
+    + 1NF (First Normal Form)
+        - Each table cell should contain a single value.
+        - Each record needs to be unique.
+    + 2NF (Second Normal Form)
+        - Rule 1- Be in 1NF
+        - Rule 2- Single Column Primary Key that does not functionally dependant on any subset of candidate key relation
+    + 3NF (Third Normal Form)
+        - Rule 1- Be in 2NF
+        - Rule 2- Has no transitive functional dependencies
+    + BCNF (Boyce-Codd Normal Form)
+        Even when a database is in 3rd Normal Form, still there would be anomalies resulted if it has more than one Candidate Key. Sometimes is BCNF is also referred as 3.5 Normal Form.
+    + 4NF (Fourth Normal Form)
+        If no database table instance contains two or more, independent and multivalued data describing the relevant entity, then it is in 4th Normal Form.
+    + 5NF (Fifth Normal Form)
+        A table is in 5th Normal Form only if it is in 4NF and it cannot be decomposed into any number of smaller tables without loss of data.
+    + 6NF (Sixth Normal Form)
+        6th Normal Form is not standardized, yet however, it is being discussed by database experts for some time. Hopefully, we would have a clear & standardized definition for 6th Normal Form in the near future…
+
+
+# Functional Dependancy(FD)(함수 종속성)
+함수 종속(functional dependency)이란 데이터베이스의 관계(relation)에서 두 개의 필드(attribute) 집합 간 제약의 일종이다.
+In relational database theory, a functional dependency is a constraint between two sets of attributes in a relation from a database. In other words, a functional dependency is a constraint between two keys. 
+함수 종속성은 수학에서의 함수와 같이 두 필드의 집합이 many-to-one 관계로 사상되는 것을 말한다. 즉, 함수와 같이 어떠한 값을 통해 종속 관계에 있는 다른 값을 유일하게 결정할 수 있다는 것이다. 데이터베이스에서의 함수 종속성을 더욱 명확하게 정의하면 다음과 같다.
+
+어떤 테이블 R에 존재하는 필드들의 부분집합을 각각 X와 Y라고 할 때, X의 한 값이 Y에 속한 오직 하나의 값에만 사상될 경우에 "Y는 X에 함수 종속 (Y is functionally dependent on X)"이라고 하며, X→Y라고 표기한다.
+
+예를 들어, 테이블에 '생일'과 '나이'라는 필드가 존재할 경우에 '나이' 필드는 '생일' 필드에 함수 종속이다. 즉, 생일을 알고 있다면, 나이에 대한 필드를 참조하지 않거나, 아예 필드를 유지하지 않아도 나이를 결정할 수 있다. 
+데이터베이스 설계 단계에서 함수 종속 관계에 있는 필드를 찾는다면, 그 만큼 중복된 데이터를 줄일 수 있다. 그러므로, 데이터베이스 설계 단계에서 각 정보들 간의 함수 종속 관계를 찾는 것은 매우 중요하다.
+* 성질
+    + augmentation (증가성) : 만약 X→Y이면, XZ→YZ이다.
+    + transitivity (타동성) : 만약 X→Y이고 Y→Z이면, X→Z이다.
+    + reflexivity (재귀성) : 만약 Y가 X의 부분집합이면, X→Y이다.
+    + self-determination (자기 결정성) : 자기 자신은 자신에 의해 함수 종속적이다. 즉, X→X이다.
+    + union (융합성) : 만약 X→Y이고 X→Z이면, X→YZ이다.
+    + decomposition (분해성) : 만약 X→YZ이면, X→Y이고 X→Z이다.
+
+* Applications to normalization
+    + Heath's theorem
+        ?
+    + Normal forms
+        database normalization levels which determine the "goodness" of a table.
+
+* Closure 개념을 이용한 Super key 판별
+    * Closure
+        일급 객체 함수(first-class functions)의 개념을 이용하여 스코프(scope)에 묶인 변수를 바인딩 하기 위한 일종의 기술이다.
+        기능상으로, 클로저는 함수를 저장한 레코드(record)이며, 스코프(scope)의 인수(Factor)들은 클로저가 만들어질 때 정의(define)되며, 스코프 내의 영역이 소멸(remove)되었어도 그에 대한 접근(access)은 독립된 복사본인 클로저를 통해 이루어질 수 있다.
+        - 스코프(Scope) : 유효범위를 말하는 것으로, 변수 사용 가능 여부를 영역을 구분짓는 것
+
+    * 본론
+        어떠한 테이블에서 주어진 필드의 집합이 해당 테이블의 super key인지를 판별하기 위해 closure라는 개념을 이용할 수 있다. 
+        어떠한 테이블의 모든 필드가 주어진 필드의 집합 S에 대해 함수 종속이라면, 주어진 필드의 집합 S는 해당 테이블의 super key라고 할 수 있다. 
+        따라서, 함수 종속성과 암스트롱의 공리, closure 개념을 이용하여 super key를 판별할 수 있다.
 
 # Microsoft SQL Server
 * RDBMS(Relational database management system, 관계형 데이터베이스 시스템)
