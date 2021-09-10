@@ -78,6 +78,7 @@ Entity - 객체
 
 # Normalization(정규화)
 Relational database 설계에서 중복된 데이터가 최소화되도록 데이터베이스의 구조를 결정하는 것.
+
 A database design technique that reduces data redundancy and eliminates undesirable characteristics like Insertion, Update and Deletion Anomalies.
 * Normal Forms in SQL
     + 1NF (First Normal Form)
@@ -164,9 +165,8 @@ In relational database theory, a functional dependency is a constraint between t
 
 # Tuning
 원하는 정보를 빠르게 출력하기 위해 시스템을 조정하는 작업
-기업의 경영활동에 있어 정보의 수집, 축적, 가공 및 효과적인 활용은 필수적이다. 점차 대형화, 복잡화되어가
-는 기업의 정보시스템에서 관계형 데이터베이스는 데이터의 관리와 활용에 있어 기존의 파일시스템과 비교할
-때 매우 간편하고 강력한 기능을 제공한다.
+
+기업의 경영활동에 있어 정보의 수집, 축적, 가공 및 효과적인 활용은 필수적이다. 점차 대형화, 복잡화되어가는 기업의 정보시스템에서 관계형 데이터베이스는 데이터의 관리와 활용에 있어 기존의 파일시스템과 비교할때 매우 간편하고 강력한 기능을 제공한다.
 
 * 튜닝 종류
     + 데이터베이스 설계
