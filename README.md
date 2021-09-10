@@ -105,6 +105,16 @@ In relational database theory, a functional dependency is a constraint between t
     + union (융합성) : 만약 X→Y이고 X→Z이면, X→YZ이다.
     + decomposition (분해성) : 만약 X→YZ이면, X→Y이고 X→Z이다.
 
+* Types
+    + Multivalued Dependency
+        - Multivalued dependency occurs in the situation where there are multiple independent multivalued attributes in a single table. 
+    + Trivial Functional Dependency
+        - The Trivial dependency is a set of attributes which are called a trivial if the set of attributes are included in that attribute.
+    + Non-Trivial Functional Dependency
+        - If attribute B is not a subset of attribute A, then it is considered as a non-trivial dependency.
+    + Transitive Dependency
+        - A Transitive Dependency is a type of functional dependency which happens when t is indirectly formed by two functional dependencies.
+
 * Applications to normalization
     + Heath's theorem
         - ?
