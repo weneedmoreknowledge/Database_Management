@@ -1,6 +1,15 @@
 # Introduction
  Search the information of DM
 
+# Index
+1. [Database](#Database)
+2. 
+3. 
+4. 
+5. 
+6. 
+
+
 # Database 
 
 * 튜블(Record)(세로줄)
@@ -90,12 +99,15 @@ A database design technique that reduces data redundancy and eliminates undesira
 
 # Functional Dependancy(FD)(함수 종속성)
 함수 종속(functional dependency)이란 데이터베이스의 관계(relation)에서 두 개의 필드(attribute) 집합 간 제약의 일종이다.
+
 In relational database theory, a functional dependency is a constraint between two sets of attributes in a relation from a database. In other words, a functional dependency is a constraint between two keys. 
+
 함수 종속성은 수학에서의 함수와 같이 두 필드의 집합이 many-to-one 관계로 사상되는 것을 말한다. 즉, 함수와 같이 어떠한 값을 통해 종속 관계에 있는 다른 값을 유일하게 결정할 수 있다는 것이다. 데이터베이스에서의 함수 종속성을 더욱 명확하게 정의하면 다음과 같다.
 
 어떤 테이블 R에 존재하는 필드들의 부분집합을 각각 X와 Y라고 할 때, X의 한 값이 Y에 속한 오직 하나의 값에만 사상될 경우에 "Y는 X에 함수 종속 (Y is functionally dependent on X)"이라고 하며, X→Y라고 표기한다.
 
 예를 들어, 테이블에 '생일'과 '나이'라는 필드가 존재할 경우에 '나이' 필드는 '생일' 필드에 함수 종속이다. 즉, 생일을 알고 있다면, 나이에 대한 필드를 참조하지 않거나, 아예 필드를 유지하지 않아도 나이를 결정할 수 있다. 
+
 데이터베이스 설계 단계에서 함수 종속 관계에 있는 필드를 찾는다면, 그 만큼 중복된 데이터를 줄일 수 있다. 그러므로, 데이터베이스 설계 단계에서 각 정보들 간의 함수 종속 관계를 찾는 것은 매우 중요하다.
 * 성질
     + augmentation (증가성) : 만약 X→Y이면, XZ→YZ이다.
