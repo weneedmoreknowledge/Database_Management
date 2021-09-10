@@ -3,13 +3,13 @@
 
 # Index
 1. [Database](#Database)
-2. [Entity & Relationship model (객체 관계 모델)](#Entity & Relationship model (객체 관계 모델))
-3. [SQL (Structured Query Language, 구조화 질의어)](#SQL (Structured Query Language, 구조화 질의어))
-4. [Normalization(정규화)](#Normalization(정규화))
-5. [Functional Dependancy(FD)(함수 종속성)](#Functional Dependancy(FD)(함수 종속성))
-6. [Microsoft SQL Server](#Microsoft SQL Server)
-7. [Tuning](#Tuning)
-8. [Note](#Note)
+2. [Entity & Relationship model (객체 관계 모델)](#entity--relationship-model-객체-관계-모델)
+3. [SQL (Structured Query Language, 구조화 질의어)](#sql-structured-query-language-구조화-질의어)
+4. [Normalization(정규화)](#normalization정규화)
+5. [Functional Dependancy(FD)(함수 종속성)](#functional-dependancyfd함수-종속성)
+6. [Microsoft SQL Server](#microsoft-sql-server)
+7. [Tuning](#tuning)
+8. [Note](#note)
 
 
 # Database 
