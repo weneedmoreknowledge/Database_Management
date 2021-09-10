@@ -13,15 +13,15 @@
 Entity - 객체
 
 * Arribute type
-    Simple
-    Composite           ㄱ
-    Multiple-Value      --- in general
-    Derived             -  derivable from value of a related attribute, or set of attributes, not necessarily in the same entity type
+    - Simple
+    - Composite           ㄱ
+    - Multiple-Value      --- in general
+    - Derived             -  derivable from value of a related attribute, or set of attributes, not necessarily in the same entity type
 
 * Weak Entity type
-    No key attribute.
-    must participate in an identifying relationship type with an owner or entity type.
-    Combination of - partial key + particular entity
+    - No key attribute.
+    - must participate in an identifying relationship type with an owner or entity type.
+    - Combination of - partial key + particular entity
 
 * Concepts
     - Structural constraints
@@ -32,38 +32,38 @@ Entity - 객체
 관계형 데이터베이스 관리 시스템의 데이터 관리를 위한 국제 표준 언어
 * 언어
     + 정의
-        CREATE      - 새로운 관계(테이블), VIEW, 인덱스, 저장 프로시저 만들기
-        DROP        - 이미 존재하는 데이터베이스 관계(테이블), 뷰, 인덱스, 저장 프로시저를 제거
-        ALTER       - 이미 존재하는 데이터베이스 개체에 대한 변경, RENAME
-        TRUNCATE    - 행(레코드) 삭제
+        - CREATE      - 새로운 관계(테이블), VIEW, 인덱스, 저장 프로시저 만들기
+        - DROP        - 이미 존재하는 데이터베이스 관계(테이블), 뷰, 인덱스, 저장 프로시저를 제거
+        - ALTER       - 이미 존재하는 데이터베이스 개체에 대한 변경, RENAME
+        - TRUNCATE    - 행(레코드) 삭제
     + 조작
-        SELECT      - 검색
-        INSERT      - 삽입
-        UPDATE      - 업데이트,수정
-        DELETE      - 삭제
+        - SELECT      - 검색
+        - INSERT      - 삽입
+        - UPDATE      - 업데이트,수정
+        - DELETE      - 삭제
     + 제어
-        GRANT       - 권한 부여
-        REVOKE      - 권한 박탈
+        - GRANT       - 권한 부여
+        - REVOKE      - 권한 박탈
         - 권한
-            CONNECT- 데이터베이스 또는 스키마에 연결하는 권한
-            SELECT - 데이터를 검색하는 권한
-            INSERT - 데이터를 등록할 수 있는 권한
-            UPDATE - 데이터를 업데이트 할 수 있는 권한
-            DELETE - 데이터를 삭제할 수 있는 권한
-            USAGE - 스키마 또는 함수와 같은 데이터베이스 개체를 사용할 수 있는 권한
+            * CONNECT- 데이터베이스 또는 스키마에 연결하는 권한
+            * SELECT - 데이터를 검색하는 권한
+            * INSERT - 데이터를 등록할 수 있는 권한
+            * UPDATE - 데이터를 업데이트 할 수 있는 권한
+            * DELETE - 데이터를 삭제할 수 있는 권한
+            * USAGE - 스키마 또는 함수와 같은 데이터베이스 개체를 사용할 수 있는 권한
 * 장단점
     - 장점
-        High performance
-        No code needed
-        Well defined standards
-        Portability
-        Structured system
-        Multiple data views
+        * High performance
+        * No code needed
+        * Well defined standards
+        * Portability
+        * Structured system
+        * Multiple data views
     - 단점
-        Complexity
-        Cost
-        Partial Control
-        Scalability and Flexibility
+        * Complexity
+        * Cost
+        * Partial Control
+        * Scalability and Flexibility
 
 # Normalization(정규화)
 Relational database 설계에서 중복된 데이터가 최소화되도록 데이터베이스의 구조를 결정하는 것.
@@ -79,13 +79,13 @@ A database design technique that reduces data redundancy and eliminates undesira
         - Rule 1- Be in 2NF
         - Rule 2- Has no transitive functional dependencies
     + BCNF (Boyce-Codd Normal Form)
-        Even when a database is in 3rd Normal Form, still there would be anomalies resulted if it has more than one Candidate Key. Sometimes is BCNF is also referred as 3.5 Normal Form.
+        - Even when a database is in 3rd Normal Form, still there would be anomalies resulted if it has more than one Candidate Key. Sometimes is BCNF is also referred as 3.5 Normal Form.
     + 4NF (Fourth Normal Form)
-        If no database table instance contains two or more, independent and multivalued data describing the relevant entity, then it is in 4th Normal Form.
+        - If no database table instance contains two or more, independent and multivalued data describing the relevant entity, then it is in 4th Normal Form.
     + 5NF (Fifth Normal Form)
-        A table is in 5th Normal Form only if it is in 4NF and it cannot be decomposed into any number of smaller tables without loss of data.
+        - A table is in 5th Normal Form only if it is in 4NF and it cannot be decomposed into any number of smaller tables without loss of data.
     + 6NF (Sixth Normal Form)
-        6th Normal Form is not standardized, yet however, it is being discussed by database experts for some time. Hopefully, we would have a clear & standardized definition for 6th Normal Form in the near future…
+        - 6th Normal Form is not standardized, yet however, it is being discussed by database experts for some time. Hopefully, we would have a clear & standardized definition for 6th Normal Form in the near future…
 
 
 # Functional Dependancy(FD)(함수 종속성)
@@ -107,20 +107,20 @@ In relational database theory, a functional dependency is a constraint between t
 
 * Applications to normalization
     + Heath's theorem
-        ?
+        - ?
     + Normal forms
-        database normalization levels which determine the "goodness" of a table.
+        - database normalization levels which determine the "goodness" of a table.
 
 * Closure 개념을 이용한 Super key 판별
     * Closure
-        일급 객체 함수(first-class functions)의 개념을 이용하여 스코프(scope)에 묶인 변수를 바인딩 하기 위한 일종의 기술이다.
+        - 일급 객체 함수(first-class functions)의 개념을 이용하여 스코프(scope)에 묶인 변수를 바인딩 하기 위한 일종의 기술이다.
         기능상으로, 클로저는 함수를 저장한 레코드(record)이며, 스코프(scope)의 인수(Factor)들은 클로저가 만들어질 때 정의(define)되며, 스코프 내의 영역이 소멸(remove)되었어도 그에 대한 접근(access)은 독립된 복사본인 클로저를 통해 이루어질 수 있다.
         - 스코프(Scope) : 유효범위를 말하는 것으로, 변수 사용 가능 여부를 영역을 구분짓는 것
 
     * 본론
-        어떠한 테이블에서 주어진 필드의 집합이 해당 테이블의 super key인지를 판별하기 위해 closure라는 개념을 이용할 수 있다. 
+        - 어떠한 테이블에서 주어진 필드의 집합이 해당 테이블의 super key인지를 판별하기 위해 closure라는 개념을 이용할 수 있다. 
         어떠한 테이블의 모든 필드가 주어진 필드의 집합 S에 대해 함수 종속이라면, 주어진 필드의 집합 S는 해당 테이블의 super key라고 할 수 있다. 
-        따라서, 함수 종속성과 암스트롱의 공리, closure 개념을 이용하여 super key를 판별할 수 있다.
+        - 따라서, 함수 종속성과 암스트롱의 공리, closure 개념을 이용하여 super key를 판별할 수 있다.
 
 # Microsoft SQL Server
 * RDBMS(Relational database management system, 관계형 데이터베이스 시스템)
